@@ -12,7 +12,52 @@
     </header>
     <main>
     <h1>ドットインストール</h1>
-    <p1>勉強中</p1>
+    <p1>勉強中<br></p1>
+    <label>名前:<input type="text"placeholder="name"><br></label>
+
+    <form action="check.php" method="post">
+      <lavel for="color" name="color">好きな色</lavel>
+      <select id="color">
+        <option>白</option>
+        <option>青</option>
+        <option>黒</option>
+        <option>赤</option>
+        <option>緑</option>
+        <option>多色</option>
+        <option>無色</option>
+        <option selected>土地</option>
+      </select><br>
+
+      <fieldset>
+        <legend>カードタイプ</legend>
+          <lavel><input type="checkbox">クリーチャー</lavel>
+          <lavel><input type="checkbox">インスタント</lavel>
+          <lavel><input type="checkbox">ソーサリー</lavel>
+          <lavel><input type="checkbox">エンチャント</lavel>
+          <lavel><input type="checkbox">アーティファクト</lavel>
+          <lavel><input type="checkbox">プレインズウォーカー</lavel>
+          <lavel><input type="checkbox">部族</lavel>
+          <lavel><input type="checkbox">土地</lavel>
+          <br>
+      </fieldset>
+
+      <fieldset>
+          <legend>好きなカードタイプ</legend>
+            <lavel><input type="radio" name="cardtype">クリーチャー</lavel>
+            <lavel><input type="radio" name="cardtype">インスタント</lavel>
+            <lavel><input type="radio" name="cardtype">ソーサリー</lavel>
+            <lavel><input type="radio" name="cardtype">エンチャント</lavel>
+            <lavel><input type="radio" name="cardtype">アーティファクト</lavel>
+            <lavel><input type="radio" name="cardtype">プレインズウォーカー</lavel>
+            <lavel><input type="radio" name="cardtype">部族</lavel>
+            <lavel><input type="radio" name="cardtype" checked>土地</lavel>
+            <br>
+      </fieldset>
+    </form>
+
+    <input type="button" value="check">
+    <button disabled>check2</button>
+    <br>
 
     <a href="members.html">メンバー紹介</a>
     <a href="rules/index.html">ルール説明へ</a>
@@ -26,7 +71,7 @@
 
     <article>
       <h1 id="standard">standard</h1>
-      <p>最新2年分<br><strong><span style="color:red;">禁止カードあるよ</span></strong></p>
+      <p>最新2年分<br><strong>※<span style="color:red;">禁止カード</span>あります</strong></p>
       <div style="background: silver;">
       <ul>
         <li>死者の原野</li>
